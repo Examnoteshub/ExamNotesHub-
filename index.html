@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ExamNotesHub</title>
     <style>
-        /* Poore page ki styling */
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-color: #f4f7f6;
@@ -17,7 +16,6 @@
             align-items: center;
         }
 
-        /* Header block (Top Banner) */
         header {
             background: linear-gradient(135deg, #007bff, #0056b3);
             color: white;
@@ -38,7 +36,6 @@
             opacity: 0.9;
         }
 
-        /* Main Container jahan notes dikhenge */
         .container {
             max-width: 500px;
             width: 90%;
@@ -57,7 +54,6 @@
             padding-bottom: 10px;
         }
 
-        /* List items ko buttons jaisa look dena */
         ul {
             list-style: none;
             padding: 0;
@@ -67,23 +63,27 @@
         li {
             background: #f8f9fa;
             margin-bottom: 12px;
-            padding: 15px;
             border-radius: 8px;
             font-size: 1.1rem;
             font-weight: bold;
-            color: #495057;
             border-left: 5px solid #007bff;
             transition: all 0.3s ease;
             box-shadow: 0 2px 4px rgba(0,0,0,0.02);
         }
 
-        /* Jab koi unpar click ya touch karega */
+        /* Pure button ko clickable banane ke liye link ki styling */
+        li a {
+            display: block;
+            padding: 15px;
+            text-decoration: none;
+            color: #495057;
+        }
+
         li:hover {
             background: #e9ecef;
             transform: translateX(5px);
         }
 
-        /* Footer (Bottom text) */
         footer {
             margin-top: auto;
             padding: 20px;
@@ -103,10 +103,13 @@
     <div class="container">
         <h2>Available Notes</h2>
         <ul>
-            <li>📖 NCC Notes</li>
-            <li>📖 UPP Notes</li>
-            <li>📖 Railway Notes</li>
-            <li>📖 SSC Notes</li>
+            <!-- Abhi NCC ka link khali rakha hai -->
+            <li><a href="#">📖 NCC Notes</a></li>
+            
+            <!-- UPP, Railway aur SSC par click karte hi photo khulegi -->
+            <li><a href="1781407807271.png">📖 UPP Notes</a></li>
+            <li><a href="IMG-20260428-WA0003.jpg">📖 Railway Notes</a></li>
+            <li><a href="IMG-20260501-WA0003.jpg">📖 SSC Notes</a></li>
         </ul>
     </div>
 
