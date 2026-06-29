@@ -1,20 +1,118 @@
 <!DOCTYPE html>
-<html>
+<html lang="hi">
 <head>
-<title>ExamNotesHub</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ExamNotesHub</title>
+    <style>
+        /* Poore page ki styling */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f7f6;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Header block (Top Banner) */
+        header {
+            background: linear-gradient(135deg, #007bff, #0056b3);
+            color: white;
+            width: 100%;
+            text-align: center;
+            padding: 30px 0;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.2rem;
+        }
+
+        header p {
+            margin: 10px 0 0 0;
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        /* Main Container jahan notes dikhenge */
+        .container {
+            max-width: 500px;
+            width: 90%;
+            background: white;
+            margin: 30px 0;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+
+        .container h2 {
+            color: #0056b3;
+            text-align: center;
+            margin-top: 0;
+            border-bottom: 2px solid #f0f0f0;
+            padding-bottom: 10px;
+        }
+
+        /* List items ko buttons jaisa look dena */
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 20px 0;
+        }
+
+        li {
+            background: #f8f9fa;
+            margin-bottom: 12px;
+            padding: 15px;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            color: #495057;
+            border-left: 5px solid #007bff;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+        }
+
+        /* Jab koi unpar click ya touch karega */
+        li:hover {
+            background: #e9ecef;
+            transform: translateX(5px);
+        }
+
+        /* Footer (Bottom text) */
+        footer {
+            margin-top: auto;
+            padding: 20px;
+            font-size: 0.9rem;
+            color: #6c757d;
+            text-align: center;
+        }
+    </style>
 </head>
-<body style="font-family:Arial;text-align:center;background:#f2f2f2;">
-<h1>📚 Welcome to ExamNotesHub</h1>
-<p>Free Study Notes, PDF, Mock Tests & Previous Year Papers</p>
+<body>
 
-<h2>Available Notes</h2>
-<ul style="list-style:none;">
-<li>📖 NCC Notes</li>
-<li>📖 UPP Notes</li>
-<li>📖 Railway Notes</li>
-<li>📖 SSC Notes</li>
-</ul>
+    <header>
+        <h1>📚 Welcome to ExamNotesHub</h1>
+        <p>Free Study Notes, PDF, Mock Tests & Previous Year Papers</p>
+    </header>
 
-<p>Website Created by ExamNotesHub</p>
+    <div class="container">
+        <h2>Available Notes</h2>
+        <ul>
+            <li>📖 NCC Notes</li>
+            <li>📖 UPP Notes</li>
+            <li>📖 Railway Notes</li>
+            <li>📖 SSC Notes</li>
+        </ul>
+    </div>
+
+    <footer>
+        Website Created by ExamNotesHub
+    </footer>
+
 </body>
 </html>
